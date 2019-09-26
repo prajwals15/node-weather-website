@@ -25,7 +25,7 @@ app.use(express.static(publicDirectoryPath));
 //render dynamic content
 app.get('', (req, res) => {
     res.render('index', {
-        title: "Weather App Home",
+        title: "Clima - Weather App",
         name: "Phoenix"
     });
 });
