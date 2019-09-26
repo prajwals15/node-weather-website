@@ -13,7 +13,8 @@ weatherForm.addEventListener("submit", (event) => {
     //console.log(location);
 
     // Perform input validation later
-    const url = "http://localhost:3000/weather?address=" + location;
+    // Using dynamix port provided by Heroku
+    const url = "/weather?address=" + location;
 
     msg1.textContent = "Loading ...";
     msg2.textContent = "";
